@@ -91,8 +91,8 @@ PRODUCT_COPY_FILES += \
     device/lge/bullhead/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
 
 # for launcher layout
-PRODUCT_PACKAGES += \
-    BullheadLayout
+#PRODUCT_PACKAGES += \
+#    BullheadLayout
 
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
