@@ -122,6 +122,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Build a separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
+BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 
 # Vendor image information
 # Use only if target uses source vendor image
