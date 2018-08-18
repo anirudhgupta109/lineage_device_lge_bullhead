@@ -24,13 +24,11 @@ PRODUCT_COPY_FILES := device/lge/bullhead/configs/apns-full-conf.xml:system/etc/
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from Pixel2ROM config
-$(call inherit-product, vendor/p2r-aosp/config/p2r-common.mk)
 
-PRODUCT_NAME := bullhead
+PRODUCT_NAME := aosp_bullhead
 PRODUCT_DEVICE := bullhead
-PRODUCT_BRAND := google
-PRODUCT_MODEL := Nexus 5X
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := AOSP on BullHead
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
