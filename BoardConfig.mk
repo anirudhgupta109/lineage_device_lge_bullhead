@@ -28,8 +28,10 @@ TARGET_2ND_CPU_VARIANT := cortex-a53.a57
 
 TARGET_NO_BOOTLOADER := true
 
+BUILD_TOP := $(shell pwd)
+
 # Inline kernel
-KERNEL_TOOLCHAIN := $(ANDROID_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+KERNEL_TOOLCHAIN := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/lge/bullhead
 TARGET_KERNEL_CONFIG := zest_defconfig
